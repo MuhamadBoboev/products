@@ -1,0 +1,21 @@
+
+body{
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  height: auto;
+}
+/* container */
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  flex: 0 1;
+}
+._container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: -10px
+}
+@import 'header';
