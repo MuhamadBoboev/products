@@ -26,12 +26,12 @@
 // let burger = document.querySelector('.header__burger');
 // let menu = document.querySelector('.header__menu');
 
-// // burger.style.backgroundColor = 'red';
-// burger.addEventListener('click', myFunction);
-// function myFunction() {
-//   menu.classList.toggle = ('active');
-//   burger.classList.toggle = ('active');
-// }
+// burger.style.backgroundColor = 'red';
+burger.addEventListener('click', myFunction);
+function myFunction() {
+  menu.classList.toggle = ('active');
+  burger.classList.toggle = ('active');
+}
 
 
 
