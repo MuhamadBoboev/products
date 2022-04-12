@@ -23,14 +23,15 @@
 //   }
 // }
 
-// let burger = document.querySelector('.header__burger');
-// let menu = document.querySelector('.header__menu');
-
+let burger = document.querySelector('.header__burger');
+let menu = document.querySelector('.header__menu');
+let body = document.body;
 // burger.style.backgroundColor = 'red';
 burger.addEventListener('click', myFunction);
 function myFunction() {
-  menu.classList.toggle = ('active');
-  burger.classList.toggle = ('active');
+  menu.classList.toggle('active');
+  burger.classList.toggle('active');
+  body.classList.toggle('lock')
 }
 
 
