@@ -8,9 +8,9 @@ body{
 
 @import 'color';
 .container {
-  max-width: 1180px;
+  max-width: 1385px;
   padding: 0px 15px;
-  margin: 0px  auto;
+  margin: 0px auto;
 }
 
 .header {
@@ -41,7 +41,9 @@ body{
 }
 .header__user__ul li:not(:nth-child(4)) {
   margin-right: 24px;
-  background-color: aquamarine;
+}
+.header__menu {
+  display: none;
 }
 @media (max-width: 768px) {
   body.lock {
@@ -53,7 +55,6 @@ body{
     height: 24px;
     width: 24px;
     top: 0;
-    background-color: aqua;
     left: 0;
     z-index: 2;
     margin-top: 0px;
@@ -103,8 +104,8 @@ body{
     height: 100%;
     overflow: auto;
     width: 100%;
-    background-color: aqua;
     transition: all 0.3s;
+    background-color: $colorWhite;
   }
   .header__menu.active {
     top: 0;

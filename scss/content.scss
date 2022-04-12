@@ -1,0 +1,38 @@
+@import 'color';
+
+.container {
+  max-width: 1385px;
+  padding: 0px 15px;
+  margin: 0px  auto;
+}
+.content__grid {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content__photo {
+  position: relative;
+}
+.content__big-img {
+  background-size: cover;
+}
+.content__big-img img {
+
+}
+.content__info {
+
+  background-color: aqua;
+}
+.content__small-img {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  margin: 24px 24px;
+
+}
+.content__small-img img {
+  display: block;
+  margin-bottom: 7px;
+}

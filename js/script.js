@@ -34,5 +34,17 @@ function myFunction() {
   body.classList.toggle('lock')
 }
 
+let small = document.querySelector(".small");
+alert(small.outerHTML);
 
+let small1 = document.querySelector(".small-1")
+let small2 = document.querySelector(".small-2")
+let small3 = document.querySelector(".small-3")
+let small4 = document.querySelector(".small-4")
+let small5 = document.querySelector(".small-5")
 
+small1.addEventListener('mouseover', myFunction)
+
+function myFunction() {
+  small.style.height = '50px'
+}
