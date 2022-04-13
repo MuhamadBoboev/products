@@ -35,16 +35,24 @@ function myFunction() {
 }
 
 let small = document.querySelector(".small");
-alert(small.outerHTML);
-
+let containerSmall = document.querySelector(".content__small-img");
+let bigImg = document.querySelector('.content__small-img');
+// alert(small.outerHTML);
+// small.images.height = '30px'
+let img = document.getElementsByTagName ('img');
 let small1 = document.querySelector(".small-1")
 let small2 = document.querySelector(".small-2")
 let small3 = document.querySelector(".small-3")
 let small4 = document.querySelector(".small-4")
 let small5 = document.querySelector(".small-5")
 
-small1.addEventListener('mouseover', myFunction)
+// small2.addEventListener('click', myFunction);
 
-function myFunction() {
-  small.style.height = '50px'
-}
+// containerSmall.querySelectorAll('img')[3].setAttribute(src, "")
+
+
+// function myFunction() {
+  // containerSmall.querySelectorAll('img')[3].height = "20px";
+  // bigImg.querySelector('img').height="20px"
+  // small.querySelector('img').setAttribute(src, "img/small-4.png")
+// }
