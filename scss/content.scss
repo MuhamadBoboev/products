@@ -11,6 +11,7 @@
 .content__grid {
   display: flex;
   background-color: rgb(196, 255, 215);
+  margin-top: 26px;
 }
 .content__photo {
   flex: 0 1 50%;
@@ -24,11 +25,15 @@
   display: flex;
   flex: 0 1 50%;
   background-color: blueviolet;
-  background-image: url(../img/small-1.png);
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+// .content__big-img:hover {
+//   transition: all 0.3s;
+//   transform: scale(0.9);
+// }
 .content__small-img {
   display: flex;
   flex-direction: column;

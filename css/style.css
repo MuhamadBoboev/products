@@ -197,6 +197,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-color: #c4ffd7;
+  margin-top: 26px;
 }
 
 .content__photo {
@@ -223,7 +224,6 @@ body {
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   background-color: blueviolet;
-  background-image: url(../img/small-1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

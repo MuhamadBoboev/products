@@ -56,3 +56,33 @@ let small5 = document.querySelector(".small-5")
   // bigImg.querySelector('img').height="20px"
   // small.querySelector('img').setAttribute(src, "img/small-4.png")
 // }
+
+
+
+imgSmall1.addEventListener('click', myFunction1)
+function myFunction1() {
+  imgBig.style.backgroundImage= 'url(../img/small-1.png)';
+}
+imgSmall2.addEventListener('click', myFunction2)
+function myFunction2() {
+  imgBig.style.backgroundImage= 'url(../img/imgBig2.png)';
+}
+imgSmall3.addEventListener('click', myFunction3)
+function myFunction3() {
+  imgBig.style.backgroundImage= 'url(../img/imgBig3.png)';
+}
+imgSmall4.addEventListener('click', myFunction4)
+function myFunction4() {
+  imgBig.style.backgroundImage= 'url(../img/imgBig4.png)';
+}
+imgSmall5.addEventListener('click', myFunction5)
+function myFunction5() {
+  imgBig.style.backgroundImage= 'url(../img/imgBig5.png)';
+}
+  // if (imgBig.style.backgroundImage == 'url(../img/imgBig2.png)') {
+  //   imgBig.style.backgroundImage= 'url(../img/imgBig2.png)';
+  // }
+
+  // imgBig.style.backgroundImage= 'url(../img/imgBig2.png)';
+
+// imgBig.style.backgroundImage= 'url(../img/imgBig2.png)';
