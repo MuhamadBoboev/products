@@ -222,6 +222,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  background-image: url(../img/small-1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
