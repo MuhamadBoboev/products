@@ -81,14 +81,12 @@ function myFunction5() {
 }
 
 contentPrice.addEventListener('mouseover', myContentPrice)
+contentPrice.addEventListener('mouseout', myContentPrice)
 function myContentPrice (){
-  if(contentPriceBlock.querySelector('display')){
   contentPriceBlock.classList.toggle('display')
-  }
-  else {
-    contentPriceBlock.classList.toggle('display')
-  }
 }
+
+
   // if (imgBig.style.backgroundImage == 'url(../img/imgBig2.png)') {
   //   imgBig.style.backgroundImage= 'url(../img/imgBig2.png)';
   // }

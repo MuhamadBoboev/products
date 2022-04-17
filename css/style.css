@@ -359,6 +359,9 @@ body {
   display: block;
   position: relative;
 }
+.content-info__block-2 .contentPriceBlock {
+  display: none;
+}
 .content-info__block-2 .contentPriceBlock.display {
   display: block;
   position: absolute;
