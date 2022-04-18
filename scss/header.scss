@@ -128,7 +128,21 @@ body{
   }
 
 }
-
+.content__size {
+  margin-top: 10px;
+  span {
+    position: relative;
+  }
+  span::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: $colorFont;
+    left: 0;
+    bottom: 2px;
+  }
+}
 
 
 

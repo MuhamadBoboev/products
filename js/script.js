@@ -86,11 +86,16 @@ function myContentPrice (){
   contentPriceBlock.classList.toggle('display')
 }
 
+document.querySelector(".dropdown__button").addEventListener('click', function(){
+  document.querySelector(".dropdown__list").classList.toggle("active")
+  this.classList.add("dropdown__button__active");
+});
 
-  // if (imgBig.style.backgroundImage == 'url(../img/imgBig2.png)') {
-  //   imgBig.style.backgroundImage= 'url(../img/imgBig2.png)';
-  // }
+document.querySelectorAll(".dropdown__list-item").forEach( function (listItem) {
+  listItem.addEventListener("click", function(){
+    document.querySelector(".dropdown__button").innerText = this.innerText;
+    document.querySelector(".dropdown__list").classList.remove("active");
+    document.querySelector(".dropdown__button").classList.remove('dropdown__button__active')
+  })
 
-  // imgBig.style.backgroundImage= 'url(../img/imgBig2.png)';
-
-// imgBig.style.backgroundImage= 'url(../img/imgBig2.png)';
+})
