@@ -1,4 +1,4 @@
-const pay = document.querySelector('.pay');
+const pay = document.querySelector('.basket-pay__position');
 window.addEventListener('click', function(event){
   if(event.target.hasAttribute('data-cart')) {
     const card = event.target.closest('.content-info__grid');
@@ -16,21 +16,22 @@ window.addEventListener('click', function(event){
 
     const cartItemHTML = `
 
-     <div class="pay__block" data-id="02">
-      <div class="title">${productInfo.title}        </div>
-      <div class="reviews">${productInfo.reviews}    </div>
-      <div class="prise">${productInfo.price}        </div>
-      <div class="counter">${productInfo.counter}     </div>
-
-     </div>`
+    <div class="basket-pay__item" data-id="02">
+      <div class="basket-pay__block">
+       <div class="title">${productInfo.title}        </div>
+       <div class="reviews">${productInfo.reviews}    </div>
+       <div class="counter">Количество ${productInfo.counter}    </div>
+       <div class="prise">${productInfo.price}        </div>
+      </div>
+    </div>
+    `
     pay.insertAdjacentHTML('beforeend', cartItemHTML)
   }
 
 })
-const buttonBasketSvg = document.querySelector('.basket-svg');
-const buttonBasket = document.querySelector(".button__basket");
+const buttonBasket = document.querySelector('.button__basket');
+
 buttonBasket.addEventListener('click', function() {
-  buttonBasketSvg.classList.toggle('active');
-  body.classList.toggle('lock');
-  document.querySelector('.header__body').classList.toggle('active');
+  document.querySelector('.content').classList.toggle('active');
+  document.querySelector('.basket-pay').classList.toggle('active')
 })

@@ -336,7 +336,6 @@
 
 
 
-
 @media (max-width:769px) {
   .content__grid {
     flex-wrap: wrap;
@@ -351,15 +350,3 @@
   }
 }
 
-.pay{
-  // margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-.pay__block{
-  text-align: center;
-  height: auto;
-  width: 200;
-  background-color: bisque;
-}

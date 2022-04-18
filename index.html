@@ -14,7 +14,7 @@
   <title>Products</title>
 </head>
 <body>
-<wrapper>
+<wrapper class="wrapper">
 
   <header class="header">
     <div class="container">
@@ -29,18 +29,8 @@
           <ul class= "header__user__ul">
             <li><a href="#"><img src="img/person.svg" ></img></a></li>
             <li><a href="#"><img src="img/Frame.svg" ></img></a></li>
-            <li data-basket-svg class="button__basket" ><a><img src="/img/Frame2.svg" ></a>
-              <div class="basket-svg">
-                <div class="basket-svg__position">
-                  <div class="pay__block" data-id="02">
-                    <div class="title">title        </div>
-                    <div class="reviews">reviews    </div>
-                    <div class="prise">prise        </div>
-                    <div class="counter">counter    </div>
-                  </div>
-                </div>
-              </div>
-            </span></li>
+            <li data-basket-svg class="button__basket" ><a><img src="/img/Frame2.svg" >
+            </a></li>
             <li class="header__burger">
               <span></span>
             </li>
@@ -170,21 +160,30 @@
       </div>
     </div>
   </content>
-  <div class="pay">
-    <div class="_conteiner">
 
-      <div class="pay__block" data-id="02">
+  <basket class="basket-pay">
+    <div class="_container ">
 
-        <div class="title">title        </div>
-        <div class="reviews">reviews        </div>
-        <div class="prise">prise        </div>
-        <div class="counter">counter</div>
+      <div class="basket-pay__container">
+        <div class="basket-pay__title-center">
+          <p>Ваша корзина</p>
+        </div>
+        <div class="basket-pay__position">
+          <div class="basket-pay__item" data-id="02">
+            <div class="basket-pay__block">
+              <div class="title">title        </div>
+              <div class="reviews">reviews    </div>
 
+              <div class="counter">counter    </div>
+             <div class="prise">prise        </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
       </div>
-
-  </div>
+    </basket>
 
 
 
