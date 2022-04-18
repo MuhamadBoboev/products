@@ -25,7 +25,8 @@
   display: flex;
   flex: 0 1 50%;
   // background-color: blueviolet;
-  background-image: url(../img/small-1.png);
+  background-image: url('../img/small-1.png');
+  // background: url('../img/small-1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -342,7 +343,6 @@
   }
   .content__photo {
     flex: 0 1 100%;
-    display: none;
   }
   .content-info {
     flex: 0 1 100%;

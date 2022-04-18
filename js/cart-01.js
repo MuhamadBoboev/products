@@ -10,6 +10,7 @@ window.addEventListener('click', function(event){
       reviews: card.querySelector('.content-info__reviews').innerText,
       price: card.querySelector('.content-info__prices').innerText,
       counter: card.querySelector('[data-counter]').innerText,
+      size: card.querySelector('.dropdown__button').innerText,
     }
     // this.console.log(productInfo.counter)
     console.log(productInfo)
@@ -20,6 +21,7 @@ window.addEventListener('click', function(event){
       <div class="basket-pay__block">
        <div class="title">${productInfo.title}        </div>
        <div class="reviews">${productInfo.reviews}    </div>
+       <div class="size">${productInfo.size}</div>
        <div class="counter">Количество ${productInfo.counter}    </div>
        <div class="prise">${productInfo.price}        </div>
       </div>
@@ -35,3 +37,4 @@ buttonBasket.addEventListener('click', function() {
   document.querySelector('.content').classList.toggle('active');
   document.querySelector('.basket-pay').classList.toggle('active')
 })
+// alert(document.querySelector('.dropdown__button'))

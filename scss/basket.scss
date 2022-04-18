@@ -7,7 +7,7 @@
 }
 .basket-pay__container {
   display: block;
-  margin: 0px 20px;
+  margin: 0px 15px;
   .basket-pay__title-center {
     display: flex;
     justify-content: center;
@@ -22,9 +22,10 @@
 .basket-pay__position {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   grid-gap: 20px;
+  margin-bottom: 40px;
 }
 @media (max-width: 767px) {
   .basket-pay {
@@ -39,10 +40,20 @@
     flex: 0 1 33%;
   }
 }
+@media (max-width: 425px) {
+  .basket-pay__position {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 20%;
+
+  }
+  .basket-pay__item {
+    flex: 0 1 33%;
+  }
+}
+
 .basket-pay__item {
   display: block;
-  max-width: 200px;
-  max-height: 200px;
   background-color: bisque;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   .basket-pay__block {

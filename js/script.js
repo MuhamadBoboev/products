@@ -61,23 +61,23 @@ let small5 = document.querySelector(".small-5")
 
 imgSmall1.addEventListener('mouseover', myFunction1)
 function myFunction1() {
-  imgBig.style.backgroundImage= 'url(../img/small-1.png)';
+  imgBig.style.backgroundImage= 'url("../img/small-1.png")';
 }
 imgSmall2.addEventListener('mouseover', myFunction2)
 function myFunction2() {
-  imgBig.style.backgroundImage= 'url(../img/imgBig2.png)';
+  imgBig.style.backgroundImage= 'url("../img/imgBig2.png")';
 }
 imgSmall3.addEventListener('mouseover', myFunction3)
 function myFunction3() {
-  imgBig.style.backgroundImage= 'url(../img/imgBig3.png)';
+  imgBig.style.backgroundImage= 'url("../img/imgBig3.png")';
 }
 imgSmall4.addEventListener('mouseover', myFunction4)
 function myFunction4() {
-  imgBig.style.backgroundImage= 'url(../img/imgBig4.png)';
+  imgBig.style.backgroundImage= 'url("../img/imgBig4.png")';
 }
 imgSmall5.addEventListener('mouseover', myFunction5)
 function myFunction5() {
-  imgBig.style.backgroundImage= 'url(../img/imgBig5.png)';
+  imgBig.style.backgroundImage= 'url("../img/imgBig5.png")';
 }
 
 contentPrice.addEventListener('mouseover', myContentPrice)
