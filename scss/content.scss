@@ -229,7 +229,7 @@
   .sign__button::after{
     content: "";
     position: absolute;
-    top: 21px;
+    top: 17px;
     right: 11px;
     height: 13px;
     width: 1px;
@@ -239,7 +239,7 @@
   .sign__button::before{
     content: "";
     position: absolute;
-    bottom: 10px;
+    bottom: 14px;
     right: 20px;
     height: 13px;
     width: 1px;
@@ -258,7 +258,7 @@
   position: absolute;
   width: 100%;
   margin-top: 5px;
-
+  z-index: 2;
   text-align: center;
   background-color: $colorWhite;
   .dropdown__list-item {
