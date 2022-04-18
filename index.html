@@ -29,7 +29,18 @@
           <ul class= "header__user__ul">
             <li><a href="#"><img src="img/person.svg" ></img></a></li>
             <li><a href="#"><img src="img/Frame.svg" ></img></a></li>
-            <li><a href="#"><img src="img/Frame2.svg" ></img></a></li>
+            <li data-basket-svg class="button__basket" ><a><img src="/img/Frame2.svg" ></a>
+              <div class="basket-svg">
+                <div class="basket-svg__position">
+                  <div class="pay__block" data-id="02">
+                    <div class="title">title        </div>
+                    <div class="reviews">reviews    </div>
+                    <div class="prise">prise        </div>
+                    <div class="counter">counter    </div>
+                  </div>
+                </div>
+              </div>
+            </span></li>
             <li class="header__burger">
               <span></span>
             </li>
@@ -101,7 +112,7 @@
 
         <section class="content-info">
 
-          <div class="content-info__grid">
+          <div class="content-info__grid" data-id="01">
             <div class="content-info__block-1">
               <span class="content-info__name-product" >Пижама для девочек</span>
               <span class="content-info__art" >Арт. 02765/46</span>
@@ -127,21 +138,53 @@
               <div class="dropdown">
                 <button class="dropdown__button sign__button">Выбрать размер</button>
                 <ul class="dropdown__list" >
-                  <li class="dropdown__list-item" data-value="travel">10</li>
-                  <li class="dropdown__list-item" data-value="lessons">20</li>
-                  <li class="dropdown__list-item" data-value="photo">30</li>
-                  <liЮ class="dropdown__list-item" data-value="sport">40</li>
+                  <li class="dropdown__list-item" data-value="10">10</li>
+                  <li class="dropdown__list-item" data-value="20">20</li>
+                  <li class="dropdown__list-item" data-value="30">30</li>
+                  <li class="dropdown__list-item" data-value="40">40</li>
                 </ul>
               </div>
             </div>
-            <p class="content__size" ><span>Определить размер</span></p>
+            <div class="content__size" ><span>Определить размер</span></div>
+
+            <div class="detailes-wrapper">
+              <div class="item counter-wrapper">
+                <button class="item__control" data-action="minus">-</button>
+                <div class="item__control" data-counter>1</div>
+                <button class="item__control" data-action="plus">+</button>
+              </div>
+              <div class="basket">
+                <button data-cart type="button" class="basket__text">
+                  <span>Добавить в корзину</pspan>
+                </button>
+                <div class="basket__favorites">
+                  <img src="img/Frame.svg" >
+                </div>
+              </div>
+            </div>
           </div>
+
 
 
         </section>
       </div>
     </div>
   </content>
+  <div class="pay">
+    <div class="_conteiner">
+
+      <div class="pay__block" data-id="02">
+
+        <div class="title">title        </div>
+        <div class="reviews">reviews        </div>
+        <div class="prise">prise        </div>
+        <div class="counter">counter</div>
+
+      </div>
+
+      </div>
+
+  </div>
 
 
 
@@ -153,6 +196,7 @@
 
 
 <script src="js/script.js" ></script>
+<script src="js/cart-01.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
