@@ -13,9 +13,10 @@ window.addEventListener('click', function(event){
       reviews: card.querySelector('.content-info__reviews').innerText,
       price: card.querySelector('.content-info__prices').innerText,
       counter: card.querySelector('[data-counter]').innerText,
-      size: card.querySelector('.dropdown__button').innerText,
+      // size: card.querySelector('.dropdown__button').innerText, data-size="10"
+      size: card.querySelector('[data-size]').innerText
     };
-    const itemInCart = pay.querySelector(`[data-id="${productInfo.id}"]`)
+    const itemInCart = pay.querySelector(`[data-id="${productInfo.id}"]`);
     console.log(itemInCart);
 
     if(itemInCart) {
@@ -49,8 +50,6 @@ window.addEventListener('click', function(event){
   }
 
 })
-
-
 
 
 
