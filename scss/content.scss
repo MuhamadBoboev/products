@@ -315,7 +315,8 @@
   align-items: center;
   max-height: 44px;
   .basket__text{
-    padding: 12px 28px;
+    padding: 0px 10px;
+    height: 100%;
     background-color: $colorFont;
     color: $colorWhite;
     letter-spacing: 0.04em;

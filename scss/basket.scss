@@ -16,14 +16,17 @@
 .basket-pay__title-center {
   display: block;
   justify-content: center;
-  p {
+  .basket-pay__title-center__text{
+    display: none;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 700;
+    text-align: center;
   }
-  .basket-pay__empty.display-none {
-    display: none;
+  .basket-pay__title-center__text.display-none{
+    display: block;
   }
+
   .basket-pay__empty {
     margin-top: 20px;
     background-color: rgb(188, 214, 237);
@@ -33,6 +36,10 @@
     font-size: 20px;
     font-weight: 700;
     padding: 30px 10px;
+    text-align: center;
+  }
+  .basket-pay__empty.display-none {
+    display: none;
   }
 }
 .basket-pay__position {

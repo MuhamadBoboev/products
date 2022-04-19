@@ -566,7 +566,8 @@ body.lock {
   max-height: 44px;
 }
 .basket .basket__text {
-  padding: 12px 28px;
+  padding: 0px 10px;
+  height: 100%;
   background-color: #333333;
   color: white;
   letter-spacing: 0.04em;
@@ -624,13 +625,15 @@ body.lock {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.basket-pay__title-center p {
+.basket-pay__title-center .basket-pay__title-center__text {
+  display: none;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
+  text-align: center;
 }
-.basket-pay__title-center .basket-pay__empty.display-none {
-  display: none;
+.basket-pay__title-center .basket-pay__title-center__text.display-none {
+  display: block;
 }
 .basket-pay__title-center .basket-pay__empty {
   margin-top: 20px;
@@ -643,6 +646,10 @@ body.lock {
   font-size: 20px;
   font-weight: 700;
   padding: 30px 10px;
+  text-align: center;
+}
+.basket-pay__title-center .basket-pay__empty.display-none {
+  display: none;
 }
 
 .basket-pay__position {

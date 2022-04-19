@@ -41,15 +41,18 @@ function toggleCartStatus () {
 
   const cartWrapper = document.querySelector('.basket-pay__position');
   const cartEmpty = document.querySelector('[data-cart-empty]');
-
+  const basketPayP = document.querySelector('.basket-pay__title-center__text');
+  console.log(basketPayP)
   console.log(cartWrapper.children.length)
 
   if (cartWrapper.children.length > 0) {
     console.log('FULL');
     cartEmpty.classList.add('display-none');
+    basketPayP.classList.add('display-none');
   } else {
     console.log('NEEEEEEEET');
-    cartEmpty.classList.remove('display-none')
+    cartEmpty.classList.remove('display-none');
+    basketPayP.classList.remove('display-none')
   }
 
 }
