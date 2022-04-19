@@ -299,6 +299,9 @@
   cursor: pointer;
 
 }
+.item__control:not(:nth-child(2)){
+  height: 100%;
+}
 .basket{
   display: grid;
   grid-gap: 5px;

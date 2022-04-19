@@ -75,3 +75,19 @@
   display: none;
 }
 
+.basket-pay__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 50px;
+  text-align: center;
+  .basket-pay__item__control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-width: 0px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
