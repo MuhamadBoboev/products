@@ -223,6 +223,7 @@ body.lock {
   display: -ms-flexbox;
   display: flex;
   margin-top: 26px;
+  margin: 0px -15px;
 }
 
 .content__photo {
@@ -614,20 +615,34 @@ body.lock {
 
 .basket-pay__container {
   display: block;
-  margin: 0px 15px;
+  margin: 0px -10px;
 }
-.basket-pay__container .basket-pay__title-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+.basket-pay__title-center {
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.basket-pay__container .basket-pay__title-center p {
+.basket-pay__title-center p {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
+}
+.basket-pay__title-center .basket-pay__empty.display-none {
+  display: none;
+}
+.basket-pay__title-center .basket-pay__empty {
+  margin-top: 20px;
+  background-color: #bcd6ed;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 30px 10px;
 }
 
 .basket-pay__position {

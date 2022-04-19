@@ -17,12 +17,13 @@ window.addEventListener('click', function(event){
       size: card.querySelector('[data-size]').innerText
     };
     const itemInCart = pay.querySelector(`[data-id="${productInfo.id}"]`);
-    console.log(itemInCart);
+    // console.log(itemInCart);
 
     if(itemInCart) {
       const counterElement = itemInCart.querySelector('[data-counter]');
-      console.log(counterElement)
+      // console.log(counterElement)
       counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
+
     } else {
 
     const cartItemHTML = `
@@ -44,7 +45,13 @@ window.addEventListener('click', function(event){
     `;
 
     pay.insertAdjacentHTML('beforeend', cartItemHTML)
+
+
     }
+
+    toggleCartStatus();
+
+
     card.querySelector('[data-counter]').innerText = '1'
 
   }

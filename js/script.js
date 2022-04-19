@@ -13,7 +13,6 @@ function myFunction() {
 document.querySelectorAll('[data-img]').forEach( function (event) {
   event.addEventListener('mouseover', function(){
     document.querySelector('.content__big-img').style.backgroundImage = 'url(' + event.src + ')';
-    console.log(document.querySelector('.content__big-img').style.backgroundImage)
 
     })
   })
