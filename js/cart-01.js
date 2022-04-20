@@ -7,7 +7,6 @@ window.addEventListener('click', function(event){
     const card = event.target.closest('.content-info__grid');
     const productInfo = {
       id: card.dataset.id,
-      // imgSrc: card.querySelector('.product-img').getAttribute('src'),
       title: card.querySelector('.content-info__name-product').innerText,
       reviews: card.querySelector('.content-info__reviews').innerText,
       price: card.querySelector('.content-info__prices span:first-child').innerText,
