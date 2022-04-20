@@ -114,3 +114,29 @@
     cursor: pointer;
   }
 }
+.basket-pay__total {
+  display: flex;
+  .basket-pay__total__block{
+    padding: 20px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 30px 10px;
+    text-align: center;
+  }
+  span:nth-child(2) {
+    margin-left: 10px ;
+  }
+
+}
+.basket-pay__total__block {
+  .total-prise {
+    color: rgb(241, 92, 17);
+  }
+  .rouble {
+    color: rgb(241, 92, 17);
+  }
+}

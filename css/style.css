@@ -226,6 +226,10 @@ body.lock {
   margin: 0px -15px;
 }
 
+.content {
+  margin-top: 26px;
+}
+
 .content__photo {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
@@ -795,4 +799,35 @@ body.lock {
   border-width: 0px;
   background-color: transparent;
   cursor: pointer;
+}
+
+.basket-pay__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.basket-pay__total .basket-pay__total__block {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 30px 10px;
+  text-align: center;
+}
+.basket-pay__total span:nth-child(2) {
+  margin-left: 10px;
+}
+
+.basket-pay__total__block .total-prise {
+  color: #f15c11;
+}
+.basket-pay__total__block .rouble {
+  color: #f15c11;
 }

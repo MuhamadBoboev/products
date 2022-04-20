@@ -5,23 +5,20 @@ const basket = document.querySelector('.basket-pay');
 window.addEventListener('click', function(event){
   if(event.target.hasAttribute('data-cart')) {
     const card = event.target.closest('.content-info__grid');
-    // console.log(card)
     const productInfo = {
       id: card.dataset.id,
       // imgSrc: card.querySelector('.product-img').getAttribute('src'),
       title: card.querySelector('.content-info__name-product').innerText,
       reviews: card.querySelector('.content-info__reviews').innerText,
-      price: card.querySelector('.content-info__prices').innerText,
+      price: card.querySelector('.content-info__prices span:first-child').innerText,
       counter: card.querySelector('[data-counter]').innerText,
       // size: card.querySelector('.dropdown__button').innerText, data-size="10"
       size: card.querySelector('[data-size]').innerText
     };
     const itemInCart = pay.querySelector(`[data-id="${productInfo.id}"]`);
-    // console.log(itemInCart);
 
     if(itemInCart) {
       const counterElement = itemInCart.querySelector('[data-counter]');
-      // console.log(counterElement)
       counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
 
     } else {
@@ -39,7 +36,7 @@ window.addEventListener('click', function(event){
          <button class="basket-pay__item__control" data-action="plus">+</button>
        </div>
 
-       <div class="prise">${productInfo.price}        </div>
+       <div class="prise"><p><span>${productInfo.price}</span><span>₽</span></p>        </div>
       </div>
     </div>
     `;
@@ -49,11 +46,13 @@ window.addEventListener('click', function(event){
 
     }
 
+
+
+    card.querySelector('[data-counter]').innerText = '1';
+
     toggleCartStatus();
 
-
-    card.querySelector('[data-counter]').innerText = '1'
-
+    calcCartPrice();
   }
 
 })
