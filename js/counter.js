@@ -55,7 +55,9 @@ function toggleCartStatus () {
 }
 function calcCartPrice() {
   const cartItems = document.querySelectorAll('.basket-pay__item');
-  const totalPriceEl = document.querySelector('.total-prise')
+  const totalPriceEl = document.querySelector('.total-prise');
+  const deliveryCost = document.querySelector('.delivery__text');
+  const cartDelivery = document.querySelector('.delivery');
 
   let totalPrice = 0;
 
@@ -67,5 +69,21 @@ function calcCartPrice() {
     totalPrice += currentPrice;
   })
   totalPriceEl.innerText = totalPrice;
+
+  if( totalPrice > 0) {
+    cartDelivery.classList.add('none');
+  } else {
+    cartDelivery.classList.remove('none');
+  }
+
+  if(totalPrice >= 600) {
+
+    deliveryCost.classList.add('free');
+    deliveryCost.innerText = 'бесплатно';
+
+  } else {
+    deliveryCost.classList.remove('free');
+    deliveryCost.innerText = '250 ₽'
+  }
 
 }

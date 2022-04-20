@@ -831,3 +831,31 @@ body.lock {
 .basket-pay__total__block .rouble {
   color: #f15c11;
 }
+
+.delivery {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+.delivery span {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 30px 10px;
+  text-align: center;
+}
+.delivery .delivery__text.free {
+  color: #09ff00;
+}
+.delivery > span:last-child {
+  text-align: start;
+  font-weight: 300;
+  font-size: 11px;
+  color: #de8200;
+  padding: 10px;
+}
+
+.delivery.none {
+  display: block;
+}
