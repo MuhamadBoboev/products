@@ -94,6 +94,9 @@ body {
   display: flex;
   margin-top: 9px;
 }
+.header__user__ul li {
+  cursor: pointer;
+}
 
 .header__user__ul li:not(:nth-child(4)) {
   margin-right: 24px;
@@ -651,6 +654,74 @@ body.lock {
   cursor: pointer;
 }
 
+/* click-buy */
+.click-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.click-buy span {
+  cursor: pointer;
+  position: relative;
+}
+.click-buy span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  left: 0;
+  bottom: 2px;
+}
+
+.hr {
+  margin-top: 30px;
+}
+.hr hr {
+  border: 0.25px solid #C4C4C4;
+  height: 0px;
+  width: 100%;
+}
+
+/*about-product */
+.about-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.about-product P {
+  cursor: pointer;
+  margin-top: 10px;
+}
+.about-product P img {
+  margin: -3px;
+  margin-right: 7px;
+}
+.about-product P span {
+  position: relative;
+}
+.about-product P span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  left: 0;
+  bottom: 2px;
+}
+
 @media (max-width: 1180px) {
   .detailes-wrapper {
     -ms-grid-columns: 3fr 10px 5fr 10px 1fr;
@@ -934,4 +1005,119 @@ body.lock {
 
 .delivery.none {
   display: block;
+}
+
+.article {
+  margin-top: 20px;
+}
+.article p {
+  text-align: center;
+}
+.article span {
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  position: relative;
+}
+.article span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+  left: 0;
+  bottom: 2px;
+}
+
+.article__grid {
+  margin-top: 20px;
+}
+.article__grid div img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.articleImg:hover {
+  overflow: hidden;
+}
+.articleImg:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.article__grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -ms-grid-rows: auto 10px auto;
+      grid-template-areas: "grid-1 grid-1 grid-2 grid-3 " "grid-1 grid-1 grid-4 grid-5";
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+.article__grid .article__img-1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: grid-1;
+}
+.article__grid .article__img-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: grid-2;
+}
+.article__grid .article__img-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: grid-3;
+}
+.article__grid .article__img-4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: grid-4;
+}
+.article__grid .article__img-5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: grid-5;
+}
+
+@media (max-width: 769px) {
+  .article__grid {
+    background-color: red;
+        grid-template-areas: "grid-1 grid-1 grid-1 grid-1  grid-2 grid-2 " "grid-1 grid-1 grid-1 grid-1  grid-4 grid-4 " "grid-3 grid-3  grid-5 grid-5 ";
+  }
+  .article__grid .article__img-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+  }
+  .article__grid .article__img-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+  }
+  .article__grid .article__img-3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .article__grid .article__img-4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 3;
+  }
+  .article__grid .article__img-5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+  }
 }

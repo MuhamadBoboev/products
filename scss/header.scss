@@ -53,6 +53,9 @@ body{
 .header__user__ul {
   display: flex;
   margin-top: 9px;
+  li {
+    cursor: pointer;
+  }
 }
 .header__user__ul li:not(:nth-child(4)) {
   margin-right: 24px;
