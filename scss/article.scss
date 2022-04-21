@@ -71,10 +71,28 @@
 }
 @media (max-width:769px) {
   .article__grid {
-    background-color: red;
     grid-template-areas:
     "grid-1 grid-1 grid-1 grid-1  grid-2 grid-2 "
     "grid-1 grid-1 grid-1 grid-1  grid-4 grid-4 "
     "grid-3 grid-3  grid-5 grid-5 " ;
+    }
+}
+@media (max-width:568px) {
+  .article__grid {
+    grid-template-areas:
+
+    "grid-1 grid-1  grid-3 grid-3 "
+    "grid-1 grid-1  grid-4 grid-4 "
+    "grid-2 grid-2  grid-5 grid-5 "
+    "grid-2 grid-2  grid-5 grid-5 ";
+    }
+}
+@media (max-width: 414px) {
+  .article__grid {
+    grid-template-areas:
+    "grid-1 grid-1 "
+    "grid-1 grid-1 "
+    "grid-2 grid-3 "
+    "grid-4 grid-5 ";
     }
 }

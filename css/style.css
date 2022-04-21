@@ -99,7 +99,11 @@ body {
 }
 
 .header__user__ul li:not(:nth-child(4)) {
-  margin-right: 24px;
+  padding: 0 12px;
+}
+
+.header__user__ul li:nth-child(3) {
+  padding-right: 24px;
 }
 
 .header__menu {
@@ -226,6 +230,15 @@ body.lock {
   bottom: 2px;
 }
 
+@media (max-width: 468px) {
+  .header__user__ul li:not(:nth-child(4)) {
+    padding: 0 9px;
+  }
+
+  .header__user__ul li:nth-child(3) {
+    padding-right: 18px;
+  }
+}
 .container {
   max-width: 1385px;
   padding: 0px 15px;
@@ -258,7 +271,6 @@ body.lock {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  background-color: aquamarine;
 }
 
 .content__big-img {
@@ -320,7 +332,6 @@ body.lock {
 
 /* content-info */
 .content-info {
-  background-color: aquamarine;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,6 +767,64 @@ body.lock {
     grid-template-columns: 3fr 5fr 1fr;
   }
 }
+@media (max-width: 468px) {
+  .detailes-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .detailes-wrapper {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .counter-wrapper {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .counter-wrapper .item__control {
+    height: 44px;
+    padding: 0 25px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+
+  .basket .basket__text {
+    height: 44px;
+    width: 203px;
+    padding: 10px;
+  }
+
+  .dropdown__button {
+    width: 100%;
+  }
+
+  .dropdown__list.active {
+    width: 100%;
+  }
+
+  .click-buy {
+    margin-top: 70px;
+  }
+}
 .basket-pay {
   display: none;
 }
@@ -1091,7 +1160,6 @@ body.lock {
 
 @media (max-width: 769px) {
   .article__grid {
-    background-color: red;
         grid-template-areas: "grid-1 grid-1 grid-1 grid-1  grid-2 grid-2 " "grid-1 grid-1 grid-1 grid-1  grid-4 grid-4 " "grid-3 grid-3  grid-5 grid-5 ";
   }
   .article__grid .article__img-1 {
@@ -1119,5 +1187,71 @@ body.lock {
     -ms-grid-row: 5;
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
+  }
+}
+@media (max-width: 568px) {
+  .article__grid {
+        grid-template-areas: "grid-1 grid-1  grid-3 grid-3 " "grid-1 grid-1  grid-4 grid-4 " "grid-2 grid-2  grid-5 grid-5 " "grid-2 grid-2  grid-5 grid-5 ";
+  }
+  .article__grid .article__img-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .article__grid .article__img-2 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .article__grid .article__img-3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+  }
+  .article__grid .article__img-4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+  }
+  .article__grid .article__img-5 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+  }
+}
+@media (max-width: 414px) {
+  .article__grid {
+        grid-template-areas: "grid-1 grid-1 " "grid-1 grid-1 " "grid-2 grid-3 " "grid-4 grid-5 ";
+  }
+  .article__grid .article__img-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .article__grid .article__img-2 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .article__grid .article__img-3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  .article__grid .article__img-4 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .article__grid .article__img-5 {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
   }
 }
