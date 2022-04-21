@@ -76,7 +76,7 @@ function calcCartPrice() {
     cartDelivery.classList.remove('none');
   }
 
-  if(totalPrice >= 600) {
+  if(totalPrice >= 1600) {
 
     deliveryCost.classList.add('free');
     deliveryCost.innerText = 'бесплатно';

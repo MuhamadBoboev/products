@@ -50,6 +50,7 @@ body {
   top: 0;
   -webkit-transition: 1s;
   transition: 1s;
+  z-index: 10;
 }
 
 .header_hidden {
@@ -326,7 +327,14 @@ body.lock {
 }
 
 .content-info__grid {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
   margin-top: 24px;
   margin-left: 36px;
   margin-right: 10px;
@@ -350,6 +358,11 @@ body.lock {
 .content-info__block-1 .content-info__reviews {
   margin-top: 16px;
 }
+.content-info__block-1 p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
 
 .forward-sign {
   position: relative;
@@ -359,7 +372,7 @@ body.lock {
   content: "";
   position: absolute;
   top: -1px;
-  right: 20px;
+  right: -17px;
   height: 13px;
   width: 1px;
   background-color: black;
@@ -371,7 +384,7 @@ body.lock {
   content: "";
   position: absolute;
   bottom: -1px;
-  right: 20px;
+  right: -17px;
   height: 13px;
   width: 1px;
   background-color: black;
@@ -382,7 +395,35 @@ body.lock {
 .content-info__block-2 {
   margin-top: 30px;
 }
+.content-info__block-2 .forward-sign__price {
+  position: relative;
+}
+.content-info__block-2 .forward-sign__price::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -20px;
+  height: 13px;
+  width: 1px;
+  background-color: black;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.content-info__block-2 .forward-sign__price::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -20px;
+  height: 13px;
+  width: 1px;
+  background-color: black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 .content-info__block-2 .content-info__block-2__p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +439,6 @@ body.lock {
   margin-left: 12px;
   color: #828282;
   display: block;
-  position: relative;
 }
 .content-info__block-2 .contentPriceBlock {
   display: none;
@@ -437,9 +477,9 @@ body.lock {
   position: absolute;
   content: "";
   top: 11px;
-  left: 0;
+  left: 74px;
   height: 1px;
-  width: 100%;
+  width: 51px;
   background-color: #828282;
 }
 
@@ -447,6 +487,9 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .content-info__block-2__p__2 span {
   display: block;
@@ -468,7 +511,7 @@ body.lock {
   text-align: left;
   border: 1px solid #333333;
   letter-spacing: 0.04em;
-  width: 100%;
+  width: 50%;
   height: 46px;
   cursor: pointer;
 }
@@ -516,7 +559,7 @@ body.lock {
 .dropdown__list.active {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 50%;
   margin-top: 5px;
   z-index: 2;
   text-align: center;
@@ -536,8 +579,9 @@ body.lock {
 .detailes-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 5fr 1fr;
-  grid-template-columns: 3fr 5fr 1fr;
+  -ms-grid-columns: 2fr 10px 4fr 10px 3fr;
+  grid-template-columns: 2fr 4fr 3fr;
+  grid-gap: 10px;
   height: 44px;
   margin-top: 40px;
 }
@@ -592,17 +636,27 @@ body.lock {
   border: 2px solid transparent;
   cursor: pointer;
 }
-.basket .basket__favorites {
-  background-color: #333333;
+
+.basket__favorites {
   height: 100%;
 }
-.basket .basket__favorites img {
-  z-index: 9;
+.basket__favorites span {
   display: block;
-  background-image: url(../img/Frame.svg);
-  color: #F2F2F2;
+  height: 100%;
+  background-image: url("../img/Frame02.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-color: #333333;
+  cursor: pointer;
 }
 
+@media (max-width: 1180px) {
+  .detailes-wrapper {
+    -ms-grid-columns: 3fr 10px 5fr 10px 1fr;
+    grid-template-columns: 3fr 5fr 1fr;
+  }
+}
 @media (max-width: 769px) {
   .content__grid {
     -ms-flex-wrap: wrap;
@@ -619,6 +673,16 @@ body.lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+
+  .content-info__grid {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .detailes-wrapper {
+    -ms-grid-columns: 3fr 10px 5fr 10px 1fr;
+    grid-template-columns: 3fr 5fr 1fr;
   }
 }
 .basket-pay {

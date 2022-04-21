@@ -19,6 +19,7 @@ body{
   background-color: $colorWhite;
   top: 0;
   transition: 1s;
+  z-index: 10;
 }
 .header_hidden {
   top: 0;
