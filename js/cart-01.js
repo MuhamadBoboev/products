@@ -59,16 +59,17 @@ window.addEventListener('click', function(event){
 
 
     }
+    // .basket__favorites
+    const busketModal = this.document.querySelector('.busket-modal');
 
-     const busketModal = this.document.querySelector('.busket-modal')
     busketModal.innerHTML = `<p><span> товар ${productInfo.title} в количестве ${productInfo.counter} единиц добавлен в корзину </span></p>`;
+
     busketModal.classList.add('active');
     busketModal.style.top = `${window.pageYOffset -50}px`;
     // busketModal.style.top = Number.parseInt(busketModal.style.top || 0)
     // console.log(window.pageYOffset)
     setTimeout(salom, 1000);
     function salom() {
-      // console.log(busketModal)
       busketModal.classList.remove('active');
       busketModal.style.top = `-100px`;
     }

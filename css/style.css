@@ -28,6 +28,18 @@ body {
   padding: -10px;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -201,20 +213,15 @@ body.lock {
   }
 
   .header__list {
-    margin: 80px 30px 43px;
+    margin: 70px 30px 43px;
   }
-  .header__list li {
-    margin-bottom: 30px;
-  }
-  .header__list li:last-child {
-    margin-bottom: 0px;
-  }
-
   .header__link {
     font-size: 12px;
     color: #333333;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px 10px;
   }
 }
 .content__size {
@@ -853,13 +860,37 @@ body.lock {
   top: -1000px;
 }
 
+.favorites-modal {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  top: 0px;
+  margin: 0 auto;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  margin: 0 auto;
+  padding: 50px;
+}
+.favorites-modal P {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f5f6a8;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.favorites-modal.active {
+  display: block;
+  top: -1000px;
+}
+
 .basket-pay {
   display: none;
 }
 
 .basket-pay.active {
   margin-top: 75px;
-  margin-top: 50px;
   display: block;
 }
 
@@ -1425,6 +1456,9 @@ body.lock {
   color: #333333;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+.footer__mail p {
+  margin-top: 10px;
 }
 
 .footer__input-1 {

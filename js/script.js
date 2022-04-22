@@ -45,8 +45,23 @@ const btnPlus = document.querySelector('[data-action="plus"]');
 const counter = document.querySelector('[data-counter]')
 
 
+const buttonFavorites = document.querySelector('[data-favorites]');
+buttonFavorites.addEventListener('click', function(){
+  const busketFavorites = document.querySelector('.favorites-modal')
 
+  busketFavorites.innerHTML = `<p><span> товар ${document.querySelector('.content-info__name-product').innerText} добавлен в избранное </span></p>`;
+  busketFavorites.classList.add('active');
 
+  busketFavorites.style.top = `${window.pageYOffset }px`;
+
+  setTimeout(salom2, 1000);
+  function salom2() {
+  busketFavorites.classList.remove('active')
+
+  busketFavorites.style.top = `-100px`;
+}
+
+})
 
 
 
