@@ -4,6 +4,7 @@ function ValidMail() {
   let valid = re.test(myMail);
 
   if (valid) {
+    output = ' Отправлено'
     // output = 'Адрес эл. почты введен правильно!';
     document.querySelector('.footer__message').style.color='green';
   } else {

@@ -44,35 +44,31 @@ window.addEventListener('click', function(event){
 
        <div class="prise"><p><span>${productInfo.price}</span><span>₽</span></p>        </div>
       </div>
-    </div>
-    `;
+    </div>    `;
 
 
-    const busketLikeHTML = `
-    <div class="busket-modal__maket">
-      <div class="busket-modal">
-        <p><span>товар ${productInfo.id} в количестве ${productInfo.counter} единиц добавлен в корзину</span></p>
-      </div>
-    </div>`;
 
-
-    // contentGrid.insertAdjacentHTML('beforeend', busketLikeHTML)
-    // setTimeout(salom, 1000)
-    // function salom() {
-    //   busketLikeHTML = ``;
-    // }
     pay.insertAdjacentHTML('beforeend', cartItemHTML)
 
-    //   setTimeout(busketPayLike, 3000);
-    //   function busketPayLike (){
 
-    //     console.log(document.querySelector('.busket-modal'));
-    //     busketLikeHTML.remove('busket-modal');
-    //     console.log(document.querySelector('.busket-modal'));
-    //   }
     }
 
-    // setTimeoutFunction()
+
+
+     const busketModal = this.document.querySelector('.busket-modal')
+    busketModal.innerHTML = `<p><span> товар ${productInfo.id} в количестве ${productInfo.counter} единиц добавлен в корзину </span></p>`;
+    busketModal.classList.add('active');
+    // busketModal.style.position = 'relative';
+    busketModal.querySelector('.busket-modal.active').style.top = `${window.pageYOffset-45}px`;
+    console.log(window.pageYOffset)
+    // busketModal.style.top = Number.parseInt(busketModal.style.top || 0)
+    // console.log(window.pageYOffset)
+    setTimeout(salom, 1000);
+    function salom() {
+      // console.log(busketModal)
+      // busketModal.classList.remove('active');
+
+    }
 
 
     card.querySelector('[data-counter]').innerText = '1';
@@ -81,17 +77,8 @@ window.addEventListener('click', function(event){
 
     calcCartPrice();
   }
-  // function setTimeoutFunction() {
-  //   setTimeout(busketPayLike, 3000);
-  //   function busketPayLike (){
-
-  //     console.log(document.querySelector('.busket-modal'));
-  //     salom.classList.remove('busket-modal');
-  //     console.log(document.querySelector('.busket-modal'));
-  //   }}
 
 })
-
 
 
 const buttonBasket = document.querySelector('.button__basket');
@@ -100,4 +87,3 @@ buttonBasket.addEventListener('click', function() {
   document.querySelector('.content').classList.toggle('active');
   document.querySelector('.basket-pay').classList.toggle('active')
 })
-// alert(document.querySelector('.dropdown__button'))

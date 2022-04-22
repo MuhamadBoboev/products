@@ -1,7 +1,10 @@
 .busket-modal {
+  z-index: 10;
+  display: none;
   position: absolute;
-  top: 20%;
-  left: 45%;
+  top: 0px;
+  margin: 0 auto;
+  transition: all 0.3s;
 
   margin: 0 auto;
   padding: 50px;
@@ -11,4 +14,8 @@
     background-color: aqua;
     width: fit-content;
   }
+}
+.busket-modal.active {
+  display: block;
+  top: 1px ;
 }

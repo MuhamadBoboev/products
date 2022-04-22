@@ -19,12 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
         header.classList.remove('header_hidden');
       }
 
-      prevScroll = currentScroll;
-
     })
-
+    console.log(prevScroll)
   }
 
   onScrollHeader()
-
 });

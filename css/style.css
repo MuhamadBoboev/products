@@ -826,9 +826,13 @@ body.lock {
   }
 }
 .busket-modal {
+  z-index: 10;
+  display: none;
   position: absolute;
-  top: 20%;
-  left: 45%;
+  top: 0px;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   margin: 0 auto;
   padding: 50px;
 }
@@ -839,6 +843,11 @@ body.lock {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.busket-modal.active {
+  display: block;
+  top: 1px;
 }
 
 .basket-pay {
