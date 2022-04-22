@@ -1,4 +1,4 @@
-
+"use strict";
 window.addEventListener('click', function(event){
 
   let counter;

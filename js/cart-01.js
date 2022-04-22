@@ -1,3 +1,4 @@
+"use strict";
 const pay = document.querySelector('.basket-pay__position');
 const basket = document.querySelector('.basket-pay');
 const contentGrid = document.querySelector('.content__grid');

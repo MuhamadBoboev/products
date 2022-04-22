@@ -1,3 +1,4 @@
+"use strict";
 const imgArticleGridContainer = document.querySelector('.article__grid');
 const imgBig = document.querySelector('[data-article]').src;
 document.querySelectorAll('.articleImg').forEach( function (event) {

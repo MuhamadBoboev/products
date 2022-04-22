@@ -1,3 +1,4 @@
+"use strict";
 function ValidMail() {
   let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
   let myMail = document.getElementById('email').value;
