@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
     })
-    console.log(prevScroll)
   }
 
   onScrollHeader()

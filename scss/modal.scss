@@ -4,18 +4,18 @@
   position: absolute;
   top: 0px;
   margin: 0 auto;
-  transition: all 0.3s;
+  transition: all 0.1s;
 
   margin: 0 auto;
   padding: 50px;
   P {
     border-radius: 10px;
     padding: 10px;
-    background-color: aqua;
+    background-color: rgb(193, 227, 43);
     width: fit-content;
   }
 }
 .busket-modal.active {
   display: block;
-  top: 1px ;
+  top: -1000px;
 }

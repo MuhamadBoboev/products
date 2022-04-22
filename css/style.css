@@ -831,15 +831,15 @@ body.lock {
   position: absolute;
   top: 0px;
   margin: 0 auto;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
   margin: 0 auto;
   padding: 50px;
 }
 .busket-modal P {
   border-radius: 10px;
   padding: 10px;
-  background-color: aqua;
+  background-color: #c1e32b;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -847,7 +847,7 @@ body.lock {
 
 .busket-modal.active {
   display: block;
-  top: 1px;
+  top: -1000px;
 }
 
 .basket-pay {
@@ -901,8 +901,8 @@ body.lock {
   margin-top: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   grid-gap: 20px;
@@ -929,51 +929,38 @@ body.lock {
   -ms-grid-column: 7;
 }
 
-.basket-pay__position > *:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 9;
+.basket-pay__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
 }
 
-@media (max-width: 767px) {
-  .basket-pay {
-    overflow: auto;
-  }
-
-  .basket-pay__position {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .basket-pay__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 33%;
-            flex: 0 1 33%;
-  }
+.basket__item-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  overflow: hidden;
+  padding: 3px;
 }
-@media (max-width: 425px) {
-  .basket-pay__position {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 20%;
-            flex: 0 1 20%;
-  }
-
-  .basket-pay__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 33%;
-            flex: 0 1 33%;
-  }
+.basket__item-img img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+.basket__item-img img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .basket-pay__item {
   display: block;
-  background-color: bisque;
   -webkit-box-shadow: #26394d 0px 20px 30px -10px;
           box-shadow: #26394d 0px 20px 30px -10px;
 }
@@ -986,6 +973,12 @@ body.lock {
   grid-template-columns: 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .basket-pay__item .basket-pay__block > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -1040,6 +1033,8 @@ body.lock {
   border-width: 0px;
   background-color: transparent;
   cursor: pointer;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .basket-pay__total {
@@ -1101,6 +1096,63 @@ body.lock {
   display: block;
 }
 
+.reviews {
+  font-size: 14px;
+}
+
+.size {
+  font-size: 15px;
+}
+
+.prise p {
+  font-size: 17px;
+}
+
+@media (max-width: 767px) {
+  .basket-pay {
+    overflow: auto;
+  }
+
+  .basket-pay__position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .basket-pay__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%;
+  }
+}
+@media (max-width: 568px) {
+  .basket-pay__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+@media (max-width: 425px) {
+  .basket-pay__position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+  }
+}
+@media (max-width: 375px) {
+  .basket-pay__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
 .article {
   margin-top: 20px;
 }

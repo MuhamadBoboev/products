@@ -63,12 +63,13 @@ function calcCartPrice() {
 
   cartItems.forEach(function (item)  {
     const amountEl = item.querySelector('[data-counter]');
-    const priceEl = item.querySelector('.prise span:first-child')
+    const priceEl = item.querySelector('[data-price]')
 
     const currentPrice = parseInt(amountEl.innerText) * parseInt(priceEl.innerText);
     totalPrice += currentPrice;
   })
   totalPriceEl.innerText = totalPrice;
+
 
   if( totalPrice > 0) {
     cartDelivery.classList.add('none');
