@@ -1,0 +1,97 @@
+.footer {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.footer__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  a {
+    list-style: none;
+    text-decoration: inherit;
+  }
+}
+.footer__buyers {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 20%;
+  background-color: rgb(221, 218, 37);
+  padding: 10px;
+  margin-left: 45px;
+  h2 {
+    font-size: 16px;
+    color: $colorFont;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  p {
+    margin-top: 13px;
+  }
+}
+.footer__about-us {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 20%;
+  background-color: rgb(137, 219, 22);
+  padding: 10px;
+  h2 {
+    font-size: 16px;
+    color: $colorFont;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  p {
+    margin-top: 13px;
+  }
+}
+.footer__mail {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 45%;
+  background-color: aqua;
+  padding: 10px;
+  margin-right: 45px;
+  h2 {
+    font-size: 16px;
+    color: $colorFont;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  }
+.footer__input-1{
+  position: relative;
+  padding: 15px;
+  border:0;
+  border-bottom: 1px solid #C4C4C4;
+  margin-top: 10px;
+  .footer__input-1::after, .footer__input-1::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background-color: red;
+    top: 0;
+    right: 0;
+  }
+}
+.footer__input-2 {
+  cursor: pointer;
+  background-color: #fff;
+  margin-top: 40px;
+  align-self: flex-end;
+  display: inline-block;
+  width: fit-content ;
+  letter-spacing: 0.04em;
+  border: 1px solid $colorFont;
+  padding: 10px 25px;
+}
+.footer__message {
+  p {
+    content: "";
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

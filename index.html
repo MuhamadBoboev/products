@@ -182,7 +182,7 @@
         <div class="article__grid">
 
           <div class="article__img-1 articleImg "><img data-article src="img/article__img-1.jpg" ></div>
-          <div class="article__img-2 articleImg "><img data-article src="img/article__img-2.jpg" ></div>
+          <div class="article__img-2 articleImg "><img data-article src="img/article__img-2.jpg" width="170" height="173"></div>
           <div class="article__img-3 articleImg "><img data-article src="img/article__img-3.jpg" ></div>
           <div class="article__img-4 articleImg "><img data-article src="img/article__img-4.jpg" ></div>
           <div class="article__img-5 articleImg "><img data-article src="img/article__img-5.jpg" ></div>
@@ -192,7 +192,42 @@
 
     </div>
   </content>
+  <footer class="footer">
+    <div class="container">
 
+    <section class="footer__section">
+      <div class="footer__buyers">
+        <h2>покупателям</h2>
+        <p><span><a href="#">Каталог</a></span></p>
+        <p><span><a href="#">Акции</a></span></p>
+        <p><span><a href="#">Бренды</a></span></p>
+      </div>
+      <div class="footer__about-us">
+        <h2>о нас</h2>
+        <p><span><a href="#">О компании</a></span></p>
+        <p><span><a href="#">Новости</a></span></p>
+        <p><span><a href="#" >Команда</a></span></p>
+      </div>
+      <div class="footer__mail">
+        <h2>Узнайте первыми о новинках и акциях</h2>
+        <br>
+        <p class="footer__message" id="message" >Пожалуйста, введите действительный адрес электронной почты</p>
+        <input placeholder="Адрес электронной почты" class="footer__input-1" id="email" name="email" type="text" size="20" />
+
+        <input class="footer__input-2" name="button" type="submit" value="Проверить" onClick="ValidMail();" />
+       </form>
+      </div>
+    </section>
+
+    </div>
+  </footer>
+
+
+  <!-- <div class="busket-modal__maket">
+    <div class="busket-modal">
+      <p><span>товар '...' в количестве '...' единиц добавлен в корзину</span></p>
+    </div>
+  </div> -->
   <basket class="basket-pay">
     <div class="container ">
 
@@ -236,6 +271,7 @@
 <script src="js/counter.js" ></script>
 <script src="js/cart-01.js" ></script>
 <script src="js/article.js" ></script>
+<script src="js/email.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

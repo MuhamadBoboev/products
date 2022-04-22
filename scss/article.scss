@@ -79,16 +79,18 @@
 }
 @media (max-width:568px) {
   .article__grid {
+    grid-gap: 7px;
     grid-template-areas:
+    "grid-1 grid-1 "
+    "grid-1 grid-1 "
+    "grid-2 grid-3 "
+    "grid-4 grid-5 ";
 
-    "grid-1 grid-1  grid-3 grid-3 "
-    "grid-1 grid-1  grid-4 grid-4 "
-    "grid-2 grid-2  grid-5 grid-5 "
-    "grid-2 grid-2  grid-5 grid-5 ";
     }
 }
 @media (max-width: 414px) {
   .article__grid {
+    grid-gap: 4px;
     grid-template-areas:
     "grid-1 grid-1 "
     "grid-1 grid-1 "

@@ -17,3 +17,12 @@ document.querySelectorAll('.articleImg').forEach( function (event) {
 //     event.classList.toggle('articleImg-hover')
 //   })
 // })
+
+// let asd ;
+// window.addEventListener('DOMContentLoaded', function(){
+//   asd
+// })
+// function salom(){
+//   asd= alert('salom');
+// }
+// setTimeout(salom, 1000)

@@ -1,6 +1,7 @@
 const pay = document.querySelector('.basket-pay__position');
 const basket = document.querySelector('.basket-pay');
-
+const contentGrid = document.querySelector('.content__grid');
+const salom = document.querySelector('.busket-modal__maket');
 
 window.addEventListener('click', function(event){
   if(event.target.hasAttribute('data-cart')) {
@@ -12,13 +13,19 @@ window.addEventListener('click', function(event){
       price: card.querySelector('.content-info__prices span:first-child').innerText,
       counter: card.querySelector('[data-counter]').innerText,
       // size: card.querySelector('.dropdown__button').innerText, data-size="10"
-      size: card.querySelector('[data-size]').innerText
+      size: card.querySelector('[data-size]').innerText,
+      busketLike: card.querySelector('[data-counter]').innerText,
     };
     const itemInCart = pay.querySelector(`[data-id="${productInfo.id}"]`);
+
+
 
     if(itemInCart) {
       const counterElement = itemInCart.querySelector('[data-counter]');
       counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
+
+
+
 
     } else {
 
@@ -39,12 +46,31 @@ window.addEventListener('click', function(event){
       </div>
     </div>
     `;
+    const busketLikeHTML = `
+    <div class="busket-modal__maket">
+      <div class="busket-modal">
+        <p><span>товар ${productInfo.id} в количестве ${productInfo.counter} единиц добавлен в корзину</span></p>
+      </div>
+    </div>`;
 
-    pay.insertAdjacentHTML('beforeend', cartItemHTML)
 
+    // contentGrid.insertAdjacentHTML('beforeend', busketLikeHTML)
+    // setTimeout(salom, 1000)
+    // function salom() {
+    //   busketLikeHTML = ``;
+    // }
+    // pay.insertAdjacentHTML('beforeend', cartItemHTML)
 
+    //   setTimeout(busketPayLike, 3000);
+    //   function busketPayLike (){
+
+    //     console.log(document.querySelector('.busket-modal'));
+    //     busketLikeHTML.remove('busket-modal');
+    //     console.log(document.querySelector('.busket-modal'));
+    //   }
     }
 
+    // setTimeoutFunction()
 
 
     card.querySelector('[data-counter]').innerText = '1';
@@ -53,9 +79,16 @@ window.addEventListener('click', function(event){
 
     calcCartPrice();
   }
+  // function setTimeoutFunction() {
+  //   setTimeout(busketPayLike, 3000);
+  //   function busketPayLike (){
+
+  //     console.log(document.querySelector('.busket-modal'));
+  //     salom.classList.remove('busket-modal');
+  //     console.log(document.querySelector('.busket-modal'));
+  //   }}
 
 })
-
 
 
 
