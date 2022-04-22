@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  transition: all 0.3s;
   a {
     list-style: none;
     text-decoration: inherit;
@@ -15,7 +16,6 @@
   display: flex;
   flex-direction: column;
   flex: 0 1 20%;
-  background-color: rgb(221, 218, 37);
   padding: 10px;
   margin-left: 45px;
   h2 {
@@ -32,7 +32,6 @@
   display: flex;
   flex-direction: column;
   flex: 0 1 20%;
-  background-color: rgb(137, 219, 22);
   padding: 10px;
   h2 {
     font-size: 16px;
@@ -48,7 +47,6 @@
   display: flex;
   flex-direction: column;
   flex: 0 1 45%;
-  background-color: aqua;
   padding: 10px;
   margin-right: 45px;
   h2 {
@@ -59,20 +57,10 @@
   }
   }
 .footer__input-1{
-  position: relative;
   padding: 15px;
-  border:0;
+  border: 0;
   border-bottom: 1px solid #C4C4C4;
   margin-top: 10px;
-  .footer__input-1::after, .footer__input-1::before{
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 10px;
-    background-color: red;
-    top: 0;
-    right: 0;
-  }
 }
 .footer__input-2 {
   cursor: pointer;
@@ -93,5 +81,32 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+}
+
+@media (max-width:769px) {
+  .footer__buyers {
+    margin-left: 0;
+  }
+  .footer__mail{
+    margin-top: 50px;
+    margin-right: 0;
+  }
+}
+@media (max-width:568px) {
+  .footer__section {
+    flex-wrap: wrap;
+
+  }
+  .footer__buyers {
+    flex: 0 1 40%;
+    align-self: flex-start;
+  }
+  .footer__about-us {
+    flex: 0 1 40%;
+    align-self: flex-end;
+  }
+  .footer__mail{
+    flex: 0 1 100%;
   }
 }

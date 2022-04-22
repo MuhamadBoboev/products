@@ -46,6 +46,8 @@ window.addEventListener('click', function(event){
       </div>
     </div>
     `;
+
+
     const busketLikeHTML = `
     <div class="busket-modal__maket">
       <div class="busket-modal">
@@ -59,7 +61,7 @@ window.addEventListener('click', function(event){
     // function salom() {
     //   busketLikeHTML = ``;
     // }
-    // pay.insertAdjacentHTML('beforeend', cartItemHTML)
+    pay.insertAdjacentHTML('beforeend', cartItemHTML)
 
     //   setTimeout(busketPayLike, 3000);
     //   function busketPayLike (){
