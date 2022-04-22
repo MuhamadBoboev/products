@@ -1,4 +1,5 @@
 "use strict";
+
 const pay = document.querySelector('.basket-pay__position');
 const basket = document.querySelector('.basket-pay');
 const contentGrid = document.querySelector('.content__grid');
@@ -20,7 +21,6 @@ window.addEventListener('click', function(event){
     const itemInCart = pay.querySelector(`[data-id="${productInfo.id}"]`);
 
 
-
     if(itemInCart) {
       const counterElement = itemInCart.querySelector('[data-counter]');
       counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
@@ -34,7 +34,7 @@ window.addEventListener('click', function(event){
 
     <div class="basket-pay__item" data-id="${productInfo.id}" >
             <div class="basket__item-img">
-              <img src="img/imgBigContent1.jpg"  >
+              <img src="img/imgBigContent5.jpg"  >
             </div>
             <div class="basket__item-info">
               <div class="basket-pay__block">
@@ -60,12 +60,10 @@ window.addEventListener('click', function(event){
 
     }
 
-
      const busketModal = this.document.querySelector('.busket-modal')
     busketModal.innerHTML = `<p><span> товар ${productInfo.title} в количестве ${productInfo.counter} единиц добавлен в корзину </span></p>`;
     busketModal.classList.add('active');
-    // busketModal.style.position = 'relative';
-    busketModal.style.top = `${window.pageYOffset }px`;
+    busketModal.style.top = `${window.pageYOffset -50}px`;
     // busketModal.style.top = Number.parseInt(busketModal.style.top || 0)
     // console.log(window.pageYOffset)
     setTimeout(salom, 1000);
@@ -87,11 +85,15 @@ window.addEventListener('click', function(event){
 })
 
 
+
+
+
 const buttonBasket = document.querySelector('.button__basket');
 
 buttonBasket.addEventListener('click', function() {
   document.querySelector('.content').classList.toggle('active');
-  document.querySelector('.basket-pay').classList.toggle('active')
+  document.querySelector('.basket-pay').classList.toggle('active');
+
 })
 
 {/* <div class="basket-pay__item" data-id="${productInfo.id}" >

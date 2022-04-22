@@ -4,6 +4,7 @@
 
 
 .basket-pay.active {
+  margin-top: 75px;
   margin-top: 50px;
   display: block;
 }
@@ -76,6 +77,7 @@
   // background-color: bisque;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   .basket-pay__block {
+    background-color: antiquewhite;
     padding: 10px;
     display: grid;
     grid-gap: 10px;
@@ -103,6 +105,7 @@
 
 .basket-pay__grid {
   display: grid;
+  margin: 10px 0px 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   height: 50px;
@@ -115,7 +118,7 @@
     border-width: 0px;
     background-color: transparent;
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 .basket-pay__total {

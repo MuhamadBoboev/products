@@ -47,9 +47,11 @@ function toggleCartStatus () {
   if (cartWrapper.children.length > 0) {
     cartEmpty.classList.add('display-none');
     basketPayP.classList.add('display-none');
+    document.querySelector('[data-basket-svg-img]').src = 'img/basket.svg'
   } else {
     cartEmpty.classList.remove('display-none');
-    basketPayP.classList.remove('display-none')
+    basketPayP.classList.remove('display-none');
+    document.querySelector('[data-basket-svg-img]').src = 'img/Frame2.svg'
   }
 
 }
