@@ -70,8 +70,8 @@ window.addEventListener('click', function(event){
     // console.log(window.pageYOffset)
     setTimeout(salom, 1000);
     function salom() {
-      // busketModal.classList.remove('active');
-      // busketModal.style.top = `-100px`;
+      busketModal.classList.remove('active');
+      busketModal.style.top = `-100px`;
     }
     // busketModal.style.top = `0px`;
 
