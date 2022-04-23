@@ -841,7 +841,6 @@ body.lock {
   position: absolute;
   top: 0px;
   margin: 0 auto;
-  left: 0;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
   margin: 0 auto;

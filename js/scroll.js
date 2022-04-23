@@ -37,8 +37,11 @@ window.addEventListener('scroll', () => {
 	if (scrollDistance > lastScrollTop) {
 		header.classList.add('header_hidden');
 
-	} else {
 
+	} else {
+    document.querySelectorAll('[data-message]').forEach(function(event){
+      event.classList.remove('active')
+    })
     header.classList.remove('header_hidden');
 	}
 
